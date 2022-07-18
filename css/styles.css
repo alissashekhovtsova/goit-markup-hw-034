@@ -200,6 +200,24 @@ img {
   padding: 200px 0;
   text-align: center;
 }
+
+.overlay {
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.25),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid var(--secondary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -256,7 +274,20 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
+
+.importance-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--item-text-color);
+  border-radius: 4px;
+}
+
 /* О студии */
 
 .about {
@@ -267,21 +298,9 @@ img {
   --card-items: 3;
 }
 
-/* .about-line {
-  height: 92px;
-  left: 215px;
-  top: 1263px;
-  background: var(--line-photo-color);
-  margin-top: -92px;
-  --card-items: 3;
-  margin-left: 30px;
-  border: 1px solid var(--secondary-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-
 /* Команда */
 .team {
-  background-color: var(--item-text-color);
+  background-color: var(--logo-text-color);
 }
 
 .team-title {
@@ -295,6 +314,10 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.team-possition {
+  margin-bottom: 16px;
 }
 
 .team-item {
@@ -365,6 +388,8 @@ img {
 .filters-button:focus {
   color: var(--logo-text-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-wrapper {
@@ -376,6 +401,13 @@ img {
 .projects-item {
   --card-items: 3;
   flex-basis: calc(100% / var((--card-items) - 2) - var(--card-gap));
+}
+
+.projects-item:hover,
+.projects-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-title {
   font-weight: 700;
@@ -389,4 +421,24 @@ img {
 .projects-text {
   font-size: 16px;
   line-height: 1.88;
+}
+
+/* Социальные сети */
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--logo-text-color);
+  border-radius: 50%;
+  outline: ;
 }
