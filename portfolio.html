@@ -19,45 +19,44 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Шапка страницы-->
-    <header class="header">
-      <div class="conteiner header-conteiner">
-        <nav class="site-nav">
-          <a class="link logo" lang="en" href="/"
-            >Web<span class="logo-end-black">Studio</span></a
-          >
 
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="link header-link" href="./index.html">Студия</a>
-            </li>
-            <li class="header-item">
-              <a class="link header-link current" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header-item">
-              <a class="link header-link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts-list list">
-          <li>
-            <a
-              class="link feedback fedback-link"
-              href="mailto:info@devstudio.com"
-            >
-              info@devstudio.com</a
-            >
+  <!--Шапка страницы-->
+  <header class="header">
+    <div class="conteiner header-conteiner">
+      <nav class="site-nav">
+        <a class="link logo" lang="en" href="/">
+          Web<span class="logo-end-black">Studio</span>
+        </a>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="link header-link current" href="./index.html">Студия</a>
           </li>
-          <li>
-            <a class="link feedback fedback-link" href="tel:+380961111111">
-              +38 096 111 11 11</a
-            >
+          <li class="header-item">
+            <a class="link header-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="header-item">
+            <a class="link header-link" href="">Контакты</a>
           </li>
         </ul>
-      </div>
-    </header>
+      </nav>
+      <ul class="contacts-list list">
+        <li>
+            <a class="link feedback fedback-link feedback-email" href="mailto:info@devstudio.com">
+              <svg class="email-icon" width="10" height="16">
+                <use href="./images/icons.svg.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+        </li>
+    <li>
+      <a class="link feedback fedback-link feedback-phone" href="tel:+380961111111">
+         <svg class="phone-icon" width="16" height="12">
+                <use href="./images/icons.svg.svg#icon-smartphone"></use>
+              </svg>
+        +38 096 111 11 11</a>
+    </li>
+    </ul>
+    </div>
+  </header>
 
     <!--Портфолио-->
     <main>
@@ -226,38 +225,72 @@
       </section>
     </main>
 
-    <!--Подвал сайта-->
-    <footer class="footer">
-      <div class="conteiner">
+      <!--Подвал сайта-->
+  <footer class="footer">
+    <div class="footer-conteiner conteiner">
+      <div class="adress-conteiner">
         <div class="logo-footer">
-          <a class="link logo" lang="en" href="/"
-            >Web<span class="end-logo-white">Studio</span></a
-          >
+          <a class="link logo" lang="en" href="/">Web<span class="end-logo-white">Studio</span></a>
         </div>
         <address class="main-contacts">
           <ul class="list">
             <li class="main-contacts-items">
-              <a
-                class="link footer-adress"
-                href="https://goo.gl/maps/99sPaowpTAShFHaD9"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+              <a class="link footer-adress" href="https://goo.gl/maps/99sPaowpTAShFHaD9" target="_blank"
+                rel="nofollow noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="main-contacts-items">
-              <a class="link footer-info" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link footer-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="main-contacts-items">
-              <a class="link footer-info" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+              <a class="link footer-info" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
-    </footer>
+
+      <div class="footer-socials">
+        <h2 class="socials-title">Присоединяйтесь</h2>
+        <ul class="socials list">
+          <li class="socials-item">
+            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="Иконка Instagram">
+              <svg class="footer-socials-icons" width="20" heigth="20">
+                <use href="./images/icons.svg.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="Иконка twitter">
+              <svg class="footer-socials-icons" width="20" heigth="20">
+                <use href="./images/icons.svg.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials-item">
+            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="Иконка facebook">
+              <svg class="footer-socials-icons" width="20" heigth="20">
+                <use href="./images/icons.svg.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials-item">
+            <a class="footer-socials-link link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="Иконка linkedin">
+              <svg class="footer-socials-icons" width="20" heigth="20">
+                <use href="./images/icons.svg.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </li>
+    </div>
+    </div>
+  </footer>
+
   </body>
 </html>
